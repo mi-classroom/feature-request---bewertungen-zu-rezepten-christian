@@ -58,9 +58,9 @@
 .hero-with-image::after{
     position: absolute;
     z-index: 1;
-    inset: 0;
     background: linear-gradient(90deg, rgb(255 255 255 / 80%) 0%, rgb(255 255 255 / 0%) 100%);
     content: "";
+    inset: 0;
 }
 
 .hero-with-image .content-navigation{
@@ -112,28 +112,29 @@
     counter-reset: step-count;
 }
 
-.steps > li{
+/* stylelint-disable-next-line no-descending-specificity */
+.steps ul > li{
     display: block;
     counter-increment: step-count;
 }
 
-.steps > li.is-text-only{
+.steps ul > li.is-text-only{
     display: flex;
     justify-content: center;
 }
 
-.steps > li.is-text-only p{
+.steps ul > li.is-text-only p{
     max-width: calc(var(--max-content-width) * 0.5);
 }
 
-.steps > li figure{
+.steps ul > li figure{
     display: flex;
     width: auto;
     align-items: center;
     gap: var(--m);
 }
 
-.steps > li figure > *{
+.steps ul > li figure > *{
     flex-basis: 50%;
     flex-grow: 1;
 }

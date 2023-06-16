@@ -2,11 +2,11 @@
 ############################################################################ */
 
 .ingredients-table{
-    border: solid var(--border-width-s) var(--border-color);
     width: 100%;
+    border: solid var(--border-width-s) var(--border-color);
     margin-bottom: var(--m);
-    transition: transform var(--tr-medium) ease-in-out;
     backface-visibility: hidden;
+    transition: transform var(--tr-medium) ease-in-out;
 }
 
 .ingredients-table th + th,
@@ -22,28 +22,28 @@
 ############################################################################ */
 
 .nutritional-values-list dt{
-    font-weight: normal;
     float: none;
+    font-weight: normal;
 }
 
 .nutritional-values-list dd{
-    font-weight: bold;
-    float: none;
     display: block;
-    font-size: larger;
-    color: var(--decoration-color);
     margin-bottom: var(--xs);
+    color: var(--decoration-color);
+    float: none;
+    font-size: larger;
+    font-weight: bold;
 }
 
 /* Recipe Calculator Amount
 ############################################################################ */
 .recipe-calculator-amount input{
+    display: inline;
     width: 4em;
-    padding-left: var(--quad);
     padding-top: var(--half);
     padding-bottom: var(--half);
-    display: inline;
-    background-color: var(--decoration-color);
+    padding-left: var(--quad);
     border-radius: var(--border-radius);
+    background-color: var(--decoration-color);
     text-align: center;
 }

@@ -5,6 +5,5 @@
         "stylelint-config-idiomatic-order"
     ],
     "rules": {
-        "indentation": 4
     }
 }
