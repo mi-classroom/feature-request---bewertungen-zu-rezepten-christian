@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
+
+    <script src="../scripts/recipe-calculator.js" defer></script>
 </head>
 
 <body>
@@ -48,10 +50,12 @@
         <div class="grid">
             <section>
                 <h2 id="zutaten">Zutaten</h2>
-                <p>für 4 Portionen</p>
+                <form class="js-recipe-calculator-amount">
+                    <p>für <input type="number" value="4"> Portionen</p>
+                </form>
         
                 <figure>
-                    <table>
+                    <table class="js-recipe-calculator-ingredients" data-amount-base="4">
                         <thead>
                             <tr>
                                 <th>Menge</th>
@@ -60,52 +64,52 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th>500 g</th>
+                                <th data-amount="500" data-unit="g">500 g</th>
                                 <td>Spaghetti</td>
                             </tr>
-        
+    
                             <tr>
-                                <th>1</th>
+                                <th data-amount="1" data-unit="">1</th>
                                 <td>Tomate</td>
                             </tr>
                             <tr>
-                                <th>5</th>
+                                <th data-amount="5" data-unit="">5</th>
                                 <td>Knoblauchzehen</td>
                             </tr>
                             <tr>
-                                <th>2</th>
+                                <th data-amount="2" data-unit="">2</th>
                                 <td>Peperoni</td>
                             </tr>
                             <tr>
-                                <th>5 EL</th>
+                                <th data-amount="5" data-unit="EL">5 EL</th>
                                 <td>Petersilie</td>
                             </tr>
                             <tr>
-                                <th>2 TL</th>
+                                <th data-amount="2" data-unit="TL">2 TL</th>
                                 <td>Gemüsebrühepulver</td>
                             </tr>
                             <tr>
-                                <th>100 ml</th>
+                                <th data-amount="100" data-unit="ml">100 ml</th>
                                 <td>Olivenöl, nativ</td>
                             </tr>
                             <tr>
-                                <th>40 g</th>
+                                <th data-amount="40" data-unit="g">40 g</th>
                                 <td>Hartkäse</td>
                             </tr>
                             <tr>
-                                <th>1 TL</th>
+                                <th data-amount="1" data-unit="TL">1 TL</th>
                                 <td>Basilikum</td>
                             </tr>
                             <tr>
-                                <th>1 TL</th>
+                                <th data-amount="1" data-unit="TL">1 TL</th>
                                 <td>Oregano</td>
                             </tr>
                             <tr>
-                                <th>1/2 TL</th>
+                                <th data-amount="0.5" data-unit="TL">1/2 TL</th>
                                 <td>Salz</td>
                             </tr>
                         </tbody>
-        
+    
                     </table>
                     <figcaption>Die Zutaten für Spaghetti aglio, olio e peperoncino</figcaption>
                 </figure>

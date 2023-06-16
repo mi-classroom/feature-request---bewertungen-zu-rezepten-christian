@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/components.css">
 </head>
 
 <body>
@@ -63,7 +64,9 @@
 
         <section>
             <h2 id="zutaten">Zutaten</h2>
-            <p>für 4 Portionen</p>
+            <form class="[js-calculator]">
+            <p>für <input type="number" value="4"> Portionen</p>
+            </form>
 
             <figure>
                 <table>
@@ -74,48 +77,48 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr data-amount="500" data-unit="g">
                             <th>500 g</th>
                             <td>Spaghetti</td>
                         </tr>
 
-                        <tr>
+                        <tr data-amount="1" data-unit="">
                             <th>1</th>
                             <td>Tomate</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="5" data-unit="">
                             <th>5</th>
                             <td>Knoblauchzehen</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="2" data-unit="">
                             <th>2</th>
                             <td>Peperoni</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="5" data-unit="EL">
                             <th>5 EL</th>
                             <td>Petersilie</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="2" data-unit="TL">
                             <th>2 TL</th>
                             <td>Gemüsebrühepulver</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="100" data-unit="ml">
                             <th>100 ml</th>
                             <td>Olivenöl, nativ</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="40" data-unit="g">
                             <th>40 g</th>
                             <td>Hartkäse</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="1" data-unit="TL">
                             <th>1 TL</th>
                             <td>Basilikum</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="1" data-unit="TL">
                             <th>1 TL</th>
                             <td>Oregano</td>
                         </tr>
-                        <tr>
+                        <tr data-amount="0,5" data-unit="TL">
                             <th>1/2 TL</th>
                             <td>Salz</td>
                         </tr>
