@@ -151,7 +151,7 @@
 .steps .has-counter::before {
     position: absolute;
     left: calc(var(--xl) * -1);
-    color: var(--pink);
+    color: var(--decoration-color);
     content: counter(step-count);
     font-size: var(--xl);
     font-weight: bold;

@@ -1,4 +1,6 @@
 :root{
+    --quad: 0.25rem;
+    --half: 0.5rem;
     --xs: 1rem;
     --s: 1.25rem;
     --m: 1.6rem;
@@ -23,11 +25,14 @@
     --max-container-width: 70rem;
     --figure-width: 66%;
 
+    --border-radius: 0.2rem;
     --border-width-s: 1px;
     --border-width-m: 3px;
     --border-color: var(--decoration-color);
 
     --color-scheme: dark light;
+    --tr-fast: 0.3s;
+    --tr-medium: 0.5s;
 
     
 }

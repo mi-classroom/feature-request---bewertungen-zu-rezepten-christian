@@ -8,6 +8,7 @@
     <title>Chefkoch - Rezept für Spaghetti aglio, olio e peperoncino</title>
 
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset-form.css">
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/ingredients.css">
@@ -113,8 +114,9 @@
 
                 </table>
                 
-                <form class="js-recipe-calculator-amount">
-                    <p>Die Zutaten für Spaghetti aglio, olio e peperoncino für <input type="number" value="4"> Portionen.</p>
+                <form class="recipe-calculator-amount js-recipe-calculator-amount">
+                    <p>Die Zutaten für Spaghetti aglio, olio e peperoncino für</p>
+                    <p><input name="amount-value" type="number" value="4" maxlength="2"> Portionen.</p>
                 </form>
             </section>
 
