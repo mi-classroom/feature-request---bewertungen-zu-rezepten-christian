@@ -8,8 +8,10 @@
     <title>Chefkoch - Rezept für Spaghetti aglio, olio e peperoncino</title>
 
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset-form.css">
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/ingredients.css">
 
     <script src="../scripts/recipe-calculator.js" defer></script>
 </head>
@@ -29,10 +31,14 @@
     </header>
 
     <main>
-        <header class="hero-with-image" id="einleitung" style="background-image: url(../images/spaghetti-aglio-olio-e-peperoncino.jpg)">
+        <header class="hero-with-image" id="einleitung"
+            style="background-image: url(../images/spaghetti-aglio-olio-e-peperoncino.jpg)">
             <h1>Rezept für Spaghetti aglio, olio e peperoncino</h1>
             <p>
-                Hey, heute zeige ich dir ein einfaches und dennoch unglaublich leckeres Rezept, das deine Geschmacksknospen zum Tanzen bringen wird. Wir werden eine köstliche Pasta zubereiten, bei der die Aromen von frischen Tomaten, Knobluch und Peperoni im Vordergrund stehen. Lass uns loslegen und gemeinsam in die Welt der italienischen Küche eintauchen!
+                Hey, heute zeige ich dir ein einfaches und dennoch unglaublich leckeres Rezept, das deine
+                Geschmacksknospen zum Tanzen bringen wird. Wir werden eine köstliche Pasta zubereiten, bei der die
+                Aromen von frischen Tomaten, Knobluch und Peperoni im Vordergrund stehen. Lass uns loslegen und
+                gemeinsam in die Welt der italienischen Küche eintauchen!
             </p>
 
             <nav class="content-navigation">
@@ -50,74 +56,73 @@
         <div class="grid">
             <section>
                 <h2 id="zutaten">Zutaten</h2>
-                <form class="js-recipe-calculator-amount">
-                    <p>für <input type="number" value="4"> Portionen</p>
+
+                <table class="ingredients-table js-recipe-calculator-ingredients" data-amount-base="4">
+                    <thead>
+                        <tr>
+                            <th>Menge</th>
+                            <th>Zutat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th data-amount="500" data-unit="g">500 g</th>
+                            <td>Spaghetti</td>
+                        </tr>
+
+                        <tr>
+                            <th data-amount="1" data-unit="">1</th>
+                            <td>Tomate</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="5" data-unit="">5</th>
+                            <td>Knoblauchzehen</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="2" data-unit="">2</th>
+                            <td>Peperoni</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="5" data-unit="EL">5 EL</th>
+                            <td>Petersilie</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="2" data-unit="TL">2 TL</th>
+                            <td>Gemüsebrühepulver</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="100" data-unit="ml">100 ml</th>
+                            <td>Olivenöl, nativ</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="40" data-unit="g">40 g</th>
+                            <td>Hartkäse</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="1" data-unit="TL">1 TL</th>
+                            <td>Basilikum</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="1" data-unit="TL">1 TL</th>
+                            <td>Oregano</td>
+                        </tr>
+                        <tr>
+                            <th data-amount="0.5" data-unit="TL">1/2 TL</th>
+                            <td>Salz</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                
+                <form class="recipe-calculator-amount js-recipe-calculator-amount">
+                    <p>Die Zutaten für Spaghetti aglio, olio e peperoncino für</p>
+                    <p><input name="amount-value" type="number" value="4" maxlength="2"> Portionen.</p>
                 </form>
-        
-                <figure>
-                    <table class="js-recipe-calculator-ingredients" data-amount-base="4">
-                        <thead>
-                            <tr>
-                                <th>Menge</th>
-                                <th>Zutat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th data-amount="500" data-unit="g">500 g</th>
-                                <td>Spaghetti</td>
-                            </tr>
-    
-                            <tr>
-                                <th data-amount="1" data-unit="">1</th>
-                                <td>Tomate</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="5" data-unit="">5</th>
-                                <td>Knoblauchzehen</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="2" data-unit="">2</th>
-                                <td>Peperoni</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="5" data-unit="EL">5 EL</th>
-                                <td>Petersilie</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="2" data-unit="TL">2 TL</th>
-                                <td>Gemüsebrühepulver</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="100" data-unit="ml">100 ml</th>
-                                <td>Olivenöl, nativ</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="40" data-unit="g">40 g</th>
-                                <td>Hartkäse</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="1" data-unit="TL">1 TL</th>
-                                <td>Basilikum</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="1" data-unit="TL">1 TL</th>
-                                <td>Oregano</td>
-                            </tr>
-                            <tr>
-                                <th data-amount="0.5" data-unit="TL">1/2 TL</th>
-                                <td>Salz</td>
-                            </tr>
-                        </tbody>
-    
-                    </table>
-                    <figcaption>Die Zutaten für Spaghetti aglio, olio e peperoncino</figcaption>
-                </figure>
             </section>
-        
+
             <section>
                 <h2 id="naehrwerte">Nährwerte pro Portion</h2>
-                <dl>
+                <dl class="nutritional-values-list">
                     <dt>kcal</dt>
                     <dd>713</dd>
                     <dt>Kohlenhydrate</dt>
@@ -132,13 +137,14 @@
 
         <section>
             <h2 id="rezept">Rezept</h2>
-        
+
             <ol class="steps">
                 <li>
                     <figure>
                         <img src="../images/step-1.jpg" alt="Topf mit kassen Spaghetti drin">
                         <figcaption class="has-counter">
-                            Die Spaghetti nach Packungsanleitung kochen. Kurz vor Ende der Garzeit 2 Kellen vom Kochwasser
+                            Die Spaghetti nach Packungsanleitung kochen. Kurz vor Ende der Garzeit 2 Kellen vom
+                            Kochwasser
                             entnehmen und beiseite stellen.
                         </figcaption>
                     </figure>
@@ -147,8 +153,10 @@
                     <figure class="is-reversed">
                         <img src="../images/step-2.jpg" alt="Topf mit kassen Spaghetti drin">
                         <figcaption class="has-counter">
-                            Den Hartkäse mit einer Reibe zerkleinern. Die Tomate in kleine Würfel schneiden und in eine Schüssel
-                            geben. Den Knoblauch klein schneiden, leicht salzen, kurz warten und zerdrücken, bis eine Paste
+                            Den Hartkäse mit einer Reibe zerkleinern. Die Tomate in kleine Würfel schneiden und in eine
+                            Schüssel
+                            geben. Den Knoblauch klein schneiden, leicht salzen, kurz warten und zerdrücken, bis eine
+                            Paste
                             entsteht. Die Knoblauchpaste ebenfalls in die Schüssel geben.
                         </figcaption>
                     </figure>
@@ -157,31 +165,39 @@
                     <figure>
                         <img src="../images/step-3.jpg" alt="Topf mit kassen Spaghetti drin">
                         <figcaption class="has-counter">
-                            Basilikum, Oregano, Petersilie und Peperoni ebenfalls klein schneiden und zur Würzmischung in der
-                            Schüssel geben. Das Delikatessbrühepulver hinzufügen. Die 2 Kellen Kochwasser dazugießen und alles
+                            Basilikum, Oregano, Petersilie und Peperoni ebenfalls klein schneiden und zur Würzmischung
+                            in der
+                            Schüssel geben. Das Delikatessbrühepulver hinzufügen. Die 2 Kellen Kochwasser dazugießen und
+                            alles
                             gut verrühren. Die Würzmischung 2 Minuten ziehen lassen und abschmecken.
                         </figcaption>
                     </figure>
                 </li>
                 <li class="is-text-only">
                     <p class="has-counter">
-                        Die gekochten Spaghetti gut abtropfen lassen und in einer heißen Pfanne maximal 1 Minute schwenken.
-                        Anschließend die Würzmischung hinzufügen und gründlich durchschwenken. Den geriebenen Hartkäse hinzufügen,
-                    der als Bindemittel dient und sich mit der flüssigen Würzmischung verbindet.
+                        Die gekochten Spaghetti gut abtropfen lassen und in einer heißen Pfanne maximal 1 Minute
+                        schwenken.
+                        Anschließend die Würzmischung hinzufügen und gründlich durchschwenken. Den geriebenen Hartkäse
+                        hinzufügen,
+                        der als Bindemittel dient und sich mit der flüssigen Würzmischung verbindet.
                     </p>
                 </li>
                 <li>
                     <figure class="is-reversed">
                         <img src="../images/step-4.jpg" alt="Topf mit kassen Spaghetti drin">
                         <figcaption class="has-counter">
-                            Vor dem Servieren das kalte Olivenöl über die Pasta geben und vermischen. Nicht vorher, da das Öl
-                            seinen Geschmack und seine Qualität verliert, wenn es erhitzt wird. Bei Bedarf zusätzlichen Hartkäse
+                            Vor dem Servieren das kalte Olivenöl über die Pasta geben und vermischen. Nicht vorher, da
+                            das Öl
+                            seinen Geschmack und seine Qualität verliert, wenn es erhitzt wird. Bei Bedarf zusätzlichen
+                            Hartkäse
                             darüberstreuen.
                         </figcaption>
                     </figure>
                 </li>
                 <li class="is-text-only">
-                    <p class="has-counter">Genieße die perfekt zubereiteten Spaghetti mit dieser aromatischen Würzmischung und lass dich von den authentischen italienischen Geschmacksnoten verwöhnen. Die richtige Zubereitung macht den Unterschied!
+                    <p class="has-counter">Genieße die perfekt zubereiteten Spaghetti mit dieser aromatischen
+                        Würzmischung und lass dich von den authentischen italienischen Geschmacksnoten verwöhnen. Die
+                        richtige Zubereitung macht den Unterschied!
                     </p>
                 </li>
             </ol>
