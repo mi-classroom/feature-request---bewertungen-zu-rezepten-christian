@@ -17,6 +17,7 @@
     --light: hsla(0, 0%, 0%, 0.1);
     --lighter: hsla(0, 0%, 0%, 0.05);
     --lightest: hsla(0, 0%, 0%, 0);
+    --decoration-color: rgb(249, 192, 192);
 
     --max-content-width: 50rem;
     --max-container-width: 70rem;
@@ -24,11 +25,11 @@
 
     --border-width-s: 1px;
     --border-width-m: 3px;
-    --border-color: var(--lighter);
+    --border-color: var(--decoration-color);
 
     --color-scheme: dark light;
 
-    --pink: rgb(246,209,209);
+    
 }
 
 html, body{
@@ -131,7 +132,6 @@ table td, table th{
 
 table + figcaption{
     border-top: solid var(--border-width-m) var(--border-color);
-    border-left: none;
     padding-left: 0;
 }
 

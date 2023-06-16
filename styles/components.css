@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     padding: var(--s);
-    background-color: var(--pink);
+    background-color: var(--decoration-color);
 }
 
 .hero-with-image .content-navigation ul{
@@ -99,7 +99,7 @@
 
 .grid{
     display: grid;
-    gap: var(--m);
+    gap: var(--l);
     grid-template-columns: 1fr 1fr;
 }
 

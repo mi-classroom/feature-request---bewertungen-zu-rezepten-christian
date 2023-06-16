@@ -1,0 +1,31 @@
+/* Ingredients Table
+############################################################################ */
+
+.ingredients-table{
+    border: solid var(--border-width-s) var(--border-color);
+    width: 100%;
+    margin-bottom: var(--m);
+}
+
+.ingredients-table th + th,
+.ingredients-table th + td{
+    border-left: solid var(--border-width-s) var(--border-color);
+}
+
+
+/* Nutritional values
+############################################################################ */
+
+.nutritional-values-list dt{
+    font-weight: normal;
+    float: none;
+}
+
+.nutritional-values-list dd{
+    font-weight: bold;
+    float: none;
+    display: block;
+    font-size: larger;
+    color: var(--decoration-color);
+    margin-bottom: var(--xs);
+}
